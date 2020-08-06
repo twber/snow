@@ -27,16 +27,18 @@ class ViewController: UIViewController {
         skView.presentScene(scene)
         
 }
-    func snowEmitter(){
+    func snowEmitter(particle: String){
         let snowEmitterCell = CAEmitterCell()
-        snowEmitterCell.contents = UIImage(named: "spark")?.cgImage
-        snowEmitterCell.birthRate = 300
+        snowEmitterCell.contents = UIImage(named: particle)?.cgImage
+        snowEmitterCell.birthRate = 100
         snowEmitterCell.lifetime = 2
-        snowEmitterCell.velocity = 700
-        snowEmitterCell.scale = 0.2
-        snowEmitterCell.scaleRange = 0.3
+        snowEmitterCell.velocity = 600
+        snowEmitterCell.scale = 0.1
+        snowEmitterCell.scaleRange = 0.05
         snowEmitterCell.yAcceleration = 100
         snowEmitterCell.emissionRange = CGFloat.pi
+        snowEmitterCell.spin = 0.5
+        snowEmitterCell.spinRange = 1
         let snowEmitterLayer = CAEmitterLayer()
         snowEmitterLayer.emitterCells = [snowEmitterCell]
         snowEmitterLayer.emitterPosition = CGPoint(x: view.bounds.width / 2, y: -50)
@@ -48,7 +50,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gradient()
-        snowEmitter()
+        snowEmitter(particle:"spark")
+        snowEmitter(particle:"money")
+        
     }
         
         // Do any additional setup after loading the view.
