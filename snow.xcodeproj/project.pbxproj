@@ -13,6 +13,7 @@
 		AB1B9C2F24DB912600DA0F80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1B9C2D24DB912600DA0F80 /* Main.storyboard */; };
 		AB1B9C3124DB912800DA0F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1B9C3024DB912800DA0F80 /* Assets.xcassets */; };
 		AB1B9C3424DB912800DA0F80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1B9C3224DB912800DA0F80 /* LaunchScreen.storyboard */; };
+		AB1B9C3C24DB949F00DA0F80 /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = AB1B9C3B24DB949F00DA0F80 /* snow.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AB1B9C3024DB912800DA0F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB1B9C3324DB912800DA0F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB1B9C3524DB912800DA0F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1B9C3B24DB949F00DA0F80 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				AB1B9C2724DB912500DA0F80 /* AppDelegate.swift */,
 				AB1B9C2924DB912500DA0F80 /* SceneDelegate.swift */,
 				AB1B9C2B24DB912500DA0F80 /* ViewController.swift */,
+				AB1B9C3B24DB949F00DA0F80 /* snow.sks */,
 				AB1B9C2D24DB912600DA0F80 /* Main.storyboard */,
 				AB1B9C3024DB912800DA0F80 /* Assets.xcassets */,
 				AB1B9C3224DB912800DA0F80 /* LaunchScreen.storyboard */,
@@ -126,6 +129,7 @@
 			files = (
 				AB1B9C3424DB912800DA0F80 /* LaunchScreen.storyboard in Resources */,
 				AB1B9C3124DB912800DA0F80 /* Assets.xcassets in Resources */,
+				AB1B9C3C24DB949F00DA0F80 /* snow.sks in Resources */,
 				AB1B9C2F24DB912600DA0F80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D32SCUNMH5;
 				INFOPLIST_FILE = snow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D32SCUNMH5;
 				INFOPLIST_FILE = snow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
